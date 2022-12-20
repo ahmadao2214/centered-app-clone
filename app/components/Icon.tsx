@@ -85,6 +85,7 @@ export function Icon(props: IconProps) {
 }
 
 export const iconRegistry = {
+  add: require("../../assets/icons/add.png"),
   back: require("../../assets/icons/back.png"),
   bell: require("../../assets/icons/bell.png"),
   caretLeft: require("../../assets/icons/caretLeft.png"),
@@ -105,6 +106,7 @@ export const iconRegistry = {
   podcast: require("../../assets/icons/podcast.png"),
   settings: require("../../assets/icons/settings.png"),
   slack: require("../../assets/icons/slack.png"),
+  trash: require("../../assets/icons/trash.png"),
   view: require("../../assets/icons/view.png"),
   x: require("../../assets/icons/x.png"),
 }
@@ -112,3 +114,7 @@ export const iconRegistry = {
 const $imageStyle: ImageStyle = {
   resizeMode: "contain",
 }
+
+// TODO:
+// Trash Icon Credit Link:"https://icons8.com/icon/85081/trash"
+// Add Icon Credit Link: "https://icons8.com/icon/95875/add-new"

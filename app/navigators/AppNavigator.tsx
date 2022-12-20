@@ -16,6 +16,7 @@ import React from "react"
 import { useColorScheme } from "react-native"
 import Config from "../config"
 import {
+  TodoScreen,
   WelcomeScreen,
 } from "../screens"
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
@@ -34,7 +35,8 @@ import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
  *   https://reactnavigation.org/docs/typescript/#organizing-types
  */
 export type AppStackParamList = {
-  Welcome: undefined
+  Welcome?: undefined,
+  Todo: undefined
   // 🔥 Your screens go here
 }
 
@@ -57,8 +59,8 @@ const AppStack = observer(function AppStack() {
     <Stack.Navigator
       screenOptions={{ headerShown: false }}
     >
-          <Stack.Screen name="Welcome" component={WelcomeScreen} />
-      {/** 🔥 Your screens go here */}
+      {/* <Stack.Screen name="Welcome" component={WelcomeScreen} /> */}
+      <Stack.Screen name="Todo" component={TodoScreen} />
     </Stack.Navigator>
   )
 })
